@@ -43,4 +43,4 @@ all_data = pd.concat(list(ticker_data.values()), ignore_index=True)
 print(all_data)
 
 # Iterar a través de los datos de los tickers y cargarlos en Redshift
-all_data.to_sql('TICKERS', conn, index=False, if_exists='append')
+all_data.to_sql('tickers', conn, index=False, if_exists='append')
